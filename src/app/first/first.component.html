@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <button class="button" (click)="this.first()">Multiply</button>
+  <button class="button" (click)="this.second()">Take only seven first items</button>
+  <button class="button" (click)="this.third()">Take only even</button>
+  <button class="stop-button" (click)="this.clear()">Clear</button>
+  <div class="output">
+    <span class="item" *ngFor="let number of numbers">{{number}}</span>
+  </div>
+</div>

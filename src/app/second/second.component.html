@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <button class="button" (click)="this.first()">First</button>
+  <button class="button" (click)="this.second()">Second</button>
+  <button class="button" (click)="this.third()">Third</button>
+  <button class="button" (click)="this.fourth()">Fourth</button>
+  <button class="stop-button" (click)="this.clear()">Clear</button>
+  <div class="output">
+    <span class="item" *ngFor="let number of numbers">{{number}}</span>
+  </div>
+</div>
